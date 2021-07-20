@@ -1,0 +1,8 @@
+[tool.mypy]
+mypy_path = 'stubs'
+exclude = 'stubs'
+disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = 'tqdm'
+follow_imports = 'silent'
